@@ -1,0 +1,10 @@
+.planTitle {
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--tertiary-gray);
+    margin: 0;
+    height: 100%;
+    line-height: 40px;
+    vertical-align: middle;
+}

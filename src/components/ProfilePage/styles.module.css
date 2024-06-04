@@ -1,0 +1,16 @@
+.profileWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 75px;
+    box-sizing: border-box;
+    gap: 45px;
+}
+
+.leftContainer {
+    flex-basis: 20%;
+}
+
+.rightContainer {
+    flex-basis: 80%;
+}

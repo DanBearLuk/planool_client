@@ -1,0 +1,25 @@
+.button {
+    width: fit-content;
+    padding: 5px 15px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Mulish', sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button.textShadow {
+    text-shadow: 0 0 3px rgba(0, 0, 0, .55), 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+.button.backgroundClip {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button:focus {
+    outline: none;
+}

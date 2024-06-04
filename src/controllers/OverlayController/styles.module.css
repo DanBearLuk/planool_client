@@ -1,0 +1,23 @@
+.overlayWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    backdrop-filter: blur(5px) brightness(.75);
+    z-index: 99999;
+}
+
+.overlayWrapper.disappearing {
+    transition: 0.5s;
+    backdrop-filter: blur(0) brightness(1);
+    opacity: 0;
+}
+
+.overlayWrapper[hidden] {
+    display: none;
+}

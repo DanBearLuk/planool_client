@@ -1,0 +1,33 @@
+.outlet {
+    width: 100%;
+    height: 100%;
+}
+
+.outletHeader {
+    position: absolute;
+    top: var(--top-offset);
+    left: 0;
+    width: 100%;
+    transition: 0.2s;
+    z-index: 1000;
+}
+
+.outletHeader.fixed {
+    position: fixed;
+    top: calc(var(--outlet-offset) + var(--top-offset));
+    left: 0;
+}
+
+.outletWrapper {
+    position: relative;
+    height: 1px;
+    min-height: calc(100vh - var(--outlet-offset) - var(--header-height));
+    top: calc(var(--top-offset) + var(--header-height));
+    left: 0;
+    transition: 0.2s;
+}
+
+.outletContent {
+    --outlet-offset: calc(var(--outlet-offset) + var(--top-offset) + var(--header-height));
+    height: 100%;
+}

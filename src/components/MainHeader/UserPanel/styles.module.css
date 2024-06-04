@@ -1,0 +1,20 @@
+.userPanelWrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.userPanelWrapper button {
+    height: 80%;
+    aspect-ratio: 1 / 1;
+    border: none;
+}
+
+.userPanelWrapper button.chats {
+    background: url('../../../../public/general/message.svg');
+}
+
+.userPanelWrapper button.notifications {
+    background: url('../../../../public/general/bell.svg');
+}

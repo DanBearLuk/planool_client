@@ -1,0 +1,19 @@
+.errorWrapper {
+    display: flex;
+    height: 100%;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.errorWrapper h1 {
+    font-size: 65px;
+    margin: 0;
+    color: var(--tertiary-gray);
+}
+
+.errorWrapper p {
+    font-size: 20px;
+    margin: 0;
+    color: var(--main-gray);
+}

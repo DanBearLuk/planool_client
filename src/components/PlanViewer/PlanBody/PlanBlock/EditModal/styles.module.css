@@ -1,0 +1,62 @@
+.editForm {
+    position: relative;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 10px;
+    width: 450px;
+    padding: 35px 25px;
+    background: #FFF;
+    border-radius: 10px;
+    --border-width: 4px;
+}
+
+.editForm::before {
+    content: '';
+    position: absolute;
+    top: calc(0px - var(--border-width));
+    left: calc(0px - var(--border-width));
+    height: calc(100% + var(--border-width) * 2);
+    width: calc(100% + var(--border-width) * 2);
+    background: var(--first-gradient);
+    border-radius: 14px;
+    z-index: -1;
+}
+
+.editForm h1 {
+    min-width: 100%;
+    margin: 0 0 55px 0;
+    text-align: center;
+    line-height: 1em;
+    color: var(--first-grad-first-color);
+}
+
+.editForm label, .editForm input:not([type=submit]), .editForm select {
+    height: 35px;
+    flex-grow: 1;
+    min-width: 40%;
+    width: 1px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 35px;
+    box-sizing: border-box;
+}
+
+.editForm label {
+    flex-grow: 0.7;
+}
+
+.editForm input:not([type=submit]), .editForm select {
+    padding: 4px 6px;
+    border: 1px solid var(--first-grad-first-color);
+    border-radius: 5px;
+}
+
+.editForm input[type=submit] {
+    flex-grow: 0;
+    margin-top: 55px;
+    background: var(--first-gradient);
+    border: none;
+    padding: 5px 45px;
+}

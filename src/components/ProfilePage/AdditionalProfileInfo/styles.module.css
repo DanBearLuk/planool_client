@@ -1,0 +1,10 @@
+.additionalInfoWrapper h3 {
+    color: var(--tertiary-gray);
+    font-size: 22px;
+    margin: 0;
+}
+
+.additionalInfoWrapper p {
+    margin: 10px 0;
+    font-size: 18px;
+}

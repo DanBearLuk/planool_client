@@ -1,0 +1,19 @@
+.planWrapper {
+    padding-top: 55px;
+    display: flex;
+    gap: 100px;
+    width: 100%;
+    justify-content: center;
+}
+
+.plan {
+    display: flex;
+    gap: 50px;
+    flex-flow: column;
+    align-items: center;
+    width: 45%;
+}
+
+.plan *[contenteditable=true] {
+    cursor: text;
+}

@@ -1,0 +1,40 @@
+.header {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    padding: 10px 75px;
+    box-sizing: border-box;
+    background: #FFF;
+}
+
+.header .wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.header .leftBlock {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.header .centerBlock {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header .rightBlock {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}

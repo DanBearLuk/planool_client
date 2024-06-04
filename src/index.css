@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --main-gray: #909090;
+    --secondary-gray: #EDEDED;
+    --tertiary-gray: #505050;
+    --first-grad-first-color: #E79EAF;
+    --first-grad-second-color: #FFC1CF;
+    --first-gradient: linear-gradient(to bottom right, var(--first-grad-first-color), var(--first-grad-second-color));
+    --second-grad-first-color: #5695FF;
+    --second-grad-second-color: #A8C8FF;
+    --second-gradient: linear-gradient(to bottom right, var(--second-grad-first-color), var(--second-grad-second-color));
+    --error-highlight-color: #FF8D8D;
+    --successful-highlight-color: #89ee92;
+    --edit-gradient: linear-gradient(to bottom right, #67c443, #ace295);
+    --edit-second-gradient: linear-gradient(to bottom right, #e77c7c, #eea1a1);
+    --block-text-color: #5F76AB;
+    --outlet-offset: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-optical-sizing: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.growOnHover {
+    transition: 0.25s;
+    transform: scale(1);
+    filter: brightness(1);
+}
+
+.growOnHover:hover {
+    transform: scale(1.05);
+    filter: brightness(1.05);
 }

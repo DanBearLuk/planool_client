@@ -1,0 +1,17 @@
+.mainInfoWrapper img {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid var(--secondary-gray);
+    border-radius: 15px;
+}
+
+.mainInfoWrapper h2 {
+    color: var(--tertiary-gray);
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 10px 0 0 0;
+}

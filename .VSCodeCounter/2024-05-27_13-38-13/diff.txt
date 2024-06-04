@@ -1,0 +1,46 @@
+Date : 2024-05-27 13:38:13
+Directory : c:\planool\planool_client\src
+Total : 9 files,  174 codes, 0 comments, 53 blanks, all 227 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| TypeScript JSX |          9 |        174 |          0 |         53 |        227 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                             | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                |          9 |        174 |          0 |         53 |        227 |
+| . (Files)                                                                        |          1 |          3 |          0 |          0 |          3 |
+| components                                                                       |          4 |         84 |          0 |         26 |        110 |
+| components\Editable                                                              |          1 |         58 |          0 |         22 |         80 |
+| components\PlanViewer                                                            |          3 |         26 |          0 |          4 |         30 |
+| components\PlanViewer (Files)                                                    |          1 |         14 |          0 |          3 |         17 |
+| components\PlanViewer\PlanBody                                                   |          2 |         12 |          0 |          1 |         13 |
+| components\PlanViewer\PlanBody (Files)                                           |          1 |          7 |          0 |          0 |          7 |
+| components\PlanViewer\PlanBody\PlanBlock                                         |          1 |          5 |          0 |          1 |          6 |
+| contexts                                                                         |          1 |         29 |          0 |          9 |         38 |
+| controllers                                                                      |          2 |         52 |          0 |         16 |         68 |
+| controllers\PlanEditorController                                                 |          1 |         50 |          0 |         15 |         65 |
+| controllers\SocketController                                                     |          1 |          2 |          0 |          1 |          3 |
+| hooks                                                                            |          1 |          6 |          0 |          2 |          8 |
++----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                         | language       | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| c:\planool\planool_client\src\App.tsx                                            | TypeScript JSX |          3 |          0 |          0 |          3 |
+| c:\planool\planool_client\src\components\Editable\index.tsx                      | TypeScript JSX |         58 |          0 |         22 |         80 |
+| c:\planool\planool_client\src\components\PlanViewer\PlanBody\PlanBlock\index.tsx | TypeScript JSX |          5 |          0 |          1 |          6 |
+| c:\planool\planool_client\src\components\PlanViewer\PlanBody\index.tsx           | TypeScript JSX |          7 |          0 |          0 |          7 |
+| c:\planool\planool_client\src\components\PlanViewer\index.tsx                    | TypeScript JSX |         14 |          0 |          3 |         17 |
+| c:\planool\planool_client\src\contexts\SocketControllerContext.tsx               | TypeScript JSX |         29 |          0 |          9 |         38 |
+| c:\planool\planool_client\src\controllers\PlanEditorController\index.tsx         | TypeScript JSX |         50 |          0 |         15 |         65 |
+| c:\planool\planool_client\src\controllers\SocketController\index.tsx             | TypeScript JSX |          2 |          0 |          1 |          3 |
+| c:\planool\planool_client\src\hooks\index.tsx                                    | TypeScript JSX |          6 |          0 |          2 |          8 |
+| Total                                                                            |                |        174 |          0 |         53 |        227 |
++----------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+

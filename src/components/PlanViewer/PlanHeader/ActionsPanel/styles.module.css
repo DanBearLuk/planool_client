@@ -1,0 +1,18 @@
+.panelWrapper {
+    display: flex;
+    height: 100%;
+    gap: 15px;
+    align-items: center;
+}
+
+.favoriteBtn {
+    height: 30px;
+    width: 30px;
+    background: var(--first-gradient);
+    mask: url(../../../../../public/general/star.svg) 0 0/100% 100%;
+}
+
+.participateBtn {
+    background: var(--first-gradient);
+    padding: 5px 55px;
+}
