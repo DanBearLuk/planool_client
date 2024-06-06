@@ -1,7 +1,7 @@
 .planWrapper {
-    padding-top: 55px;
     display: flex;
     gap: 100px;
+    box-sizing: border-box;
     width: 100%;
     justify-content: center;
 }
@@ -16,4 +16,19 @@
 
 .plan *[contenteditable=true] {
     cursor: text;
+}
+
+.basicInfo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 35px 30px 35px;
+}
+
+.basicInfo h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 0;
+    color: var(--main-gray);
 }

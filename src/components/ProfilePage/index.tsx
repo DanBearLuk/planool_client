@@ -5,6 +5,7 @@ import { useUser } from '../../contexts/UserContext';
 import AdditionalProfileInfo from './AdditionalProfileInfo';
 import { getPlans } from '../../services/plans';
 import PlansList from './PlansList';
+import EditModeButton from '../EditModeButton';
 
 function ProfilePage() {
     const { user } = useUser();
@@ -26,6 +27,12 @@ function ProfilePage() {
         <div className={styles.profileWrapper}>
             <div className={styles.leftContainer}>
                 <ProfileMainInfo avatarUrl='' username={user?.username || ''} />
+
+                <div className={styles.friendsList}>
+                    <button>Friends list</button>
+                    <img src='/general/search.svg' />
+                    Your friends list is empty
+                </div>
             </div>
             
             <div className={styles.rightContainer}>
@@ -34,8 +41,10 @@ function ProfilePage() {
                 )}
 
                 <PlansList title='Favorite Plans' plans={favoritePlans} />
-                <PlansList title='Created Plans' plans={createdPlans} />
+                <PlansList title='Created Plans' plans={createdPlans} includeCreate />
             </div>
+
+            <EditModeButton onStateChanged={() => {}} />
         </div>
     );
 }

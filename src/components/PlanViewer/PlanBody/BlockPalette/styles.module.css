@@ -1,0 +1,51 @@
+.blockPatternsWrapper {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 25px;
+    position: absolute;
+    width: 300px;
+    height: calc(100vh - 120px);
+    top: 0;
+    left: 0;
+    background: var(--secondary-gray);
+}
+
+.blockPatternsWrapper h1 {
+    color: var(--tertiary-gray);
+}
+
+.cardExample {
+    position: relative;
+    width: 87.5%;
+    padding: 4px;
+    background: var(--background);
+    border-radius: 12px;
+    height: 100px;
+}
+
+.cardExample::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 36px;
+    background: #FFF;
+    height: calc(100% - 40px);
+    width: calc(100% - 8px);
+    border-radius: 0 0 8px 8px;
+}
+
+.cardExample h4 {
+    margin: 0;
+    color: #FFF;
+    font-size: 22px;
+    padding-left: 5px;
+}
+
+.cardExample img {
+    position: absolute;
+    right: 7px;
+    top: 18px;
+    height: 20px;
+    transform: translateY(-50%);
+}

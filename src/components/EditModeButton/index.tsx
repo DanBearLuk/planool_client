@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css';
-import Button from '../../../Button';
+import Button from '../Button';
 
 interface EditModeButtonProps {
     onStateChanged: (isEnabled: boolean) => void

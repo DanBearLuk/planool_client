@@ -4,8 +4,7 @@ import styles from './styles.module.css';
 const navBarLinks = {
     'Events near you': '/events',
     'Most popular events': '/events',
-    'All events': '/events',
-    'About': '/about'
+    'All events': '/events'
 };
 
 function NavBar() {

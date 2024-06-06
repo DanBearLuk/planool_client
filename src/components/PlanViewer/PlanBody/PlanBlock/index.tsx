@@ -11,10 +11,12 @@ import Editable from '../../../Editable';
 interface PlanBlockProps {
     blockInfo: BlockInfo,
     isEditable?: boolean,
-    onEdit?: (edit: EditInfo) => void
+    onEdit?: (edit: EditInfo) => void,
+    background: string,
+    fontColor: string
 }
 
-function PlanBlock({ blockInfo, isEditable = false, onEdit }: PlanBlockProps) {
+function PlanBlock({ blockInfo, isEditable = false, onEdit, background, fontColor }: PlanBlockProps) {
     const hasWidgetStyle = blockInfo.widget ? styles.hasWidget : '';
 
     const handleEdits = (edits: EditInfo[]) => edits.forEach(edit => onEdit?.(edit));
@@ -26,7 +28,7 @@ function PlanBlock({ blockInfo, isEditable = false, onEdit }: PlanBlockProps) {
     }
 
     return (
-        <div className={`${styles.blockWrapper} ${hasWidgetStyle}`}>
+        <div className={`${styles.blockWrapper} ${hasWidgetStyle}`} style={{ '--background': background, '--block-text-color': fontColor } as React.CSSProperties}>
             <div className={styles.blockHeader}>
                 <h1>
                     <Editable isEnabled={isEditable} onEdit={onEdit}>{blockInfo.title}</Editable>

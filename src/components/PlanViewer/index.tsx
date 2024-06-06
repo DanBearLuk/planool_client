@@ -5,7 +5,7 @@ import PlanHeader from './PlanHeader';
 import ErrorPage from '../ErrorPage';
 import { useUser } from '../../contexts/UserContext';
 import PlanBody from './PlanBody';
-import EditModeButton from './PlanBody/EditModeButton';
+import EditModeButton from '../EditModeButton';
 import { usePlanEditor } from '../../controllers/PlanEditorController';
 import { useSocketController } from '../../contexts/SocketControllerContext';
 import { AuthorInfo, PlanInfo } from './types';

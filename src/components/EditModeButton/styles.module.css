@@ -4,7 +4,7 @@
     right: 30px;
     height: 55px;
     width: 55px;
-    background: url(../../../../../public/general/edit.svg) center / 75% no-repeat, 
+    background: url(../../../public/general/edit.svg) center / 75% no-repeat, 
                 var(--edit-gradient);
     outline: 0px 0px 5px -5px solid black;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, .15),
@@ -12,6 +12,6 @@
 }
 
 .enabled {
-    background: url(../../../../../public/general/edit.svg) center / 75% no-repeat, 
+    background: url(../../../public/general/edit.svg) center / 75% no-repeat, 
                 var(--edit-second-gradient);    
 }

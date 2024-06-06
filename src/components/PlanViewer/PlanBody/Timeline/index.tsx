@@ -19,6 +19,19 @@ function Timeline({ timeline }: TimelineProps) {
         return hoursS + ':' + minutesS;
     }
 
+    const convertToDate = (timestamp: number) => {
+        const date = new Date(timestamp);
+        const day = date.getUTCDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+
+        const dayS = day > 9 ? `${day}` : `0${day}`;
+        const monthS = month > 9 ? `${month}` : `0${month}`;
+        const yearS = year.toString();
+
+        return dayS + '/' + monthS + '/' + yearS;
+    }
+
     return (
         <div className={styles.timelineWrapper}>
             {timeline.map((timepoint, idx) => {
@@ -36,6 +49,8 @@ function Timeline({ timeline }: TimelineProps) {
                             height: timepoint.blockHeight + 50 + 'px'
                         } as CSSProperties}
                     >
+                        {idx === 0 && <h4 className={styles.date}>{convertToDate(timepoint.start)}</h4>}
+
                         {!prevContinuous && (
                             <>
                                 {(idx > 0) && (<div className={styles.connectingDot} />)}

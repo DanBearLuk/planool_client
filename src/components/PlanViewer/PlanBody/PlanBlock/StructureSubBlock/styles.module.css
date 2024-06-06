@@ -38,7 +38,7 @@
     left: calc(0px - var(--border-radius));
     height: calc(100% + var(--border-radius) * 2);
     width: calc(100% + var(--border-radius) * 2);
-    background: var(--second-gradient);
+    background: var(--background);
     z-index: -2;
     border-radius: 5px;
 }
@@ -58,7 +58,7 @@
     padding: 2px 8px;
     height: 30px;
     gap: 6px;
-    background: var(--second-gradient);
+    background: var(--background);
     border-radius: 7px;
     color: #FFF;
     font-size: 17px;

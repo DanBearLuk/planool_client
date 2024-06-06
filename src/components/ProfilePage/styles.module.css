@@ -4,13 +4,48 @@
     width: 100%;
     padding: 75px;
     box-sizing: border-box;
-    gap: 45px;
+    gap: 105px;
 }
 
 .leftContainer {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
     flex-basis: 20%;
 }
 
 .rightContainer {
     flex-basis: 80%;
+}
+
+.friendsList {
+    position: relative;
+    margin-top: 45px;
+    width: 100%;
+    text-align: center;
+    color: var(--tertiary-gray);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.friendsList button {
+    width: 100%;
+    border: none;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: start;
+    border-radius: 10px 10px 0 0;
+    background: var(--secondary-gray);
+    color: var(--tertiary-gray);
+    cursor: pointer;    
+    margin-bottom: 15px;
+}
+
+.friendsList img {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }

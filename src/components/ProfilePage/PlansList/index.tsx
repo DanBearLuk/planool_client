@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './styles.module.css';
 
-function PlansList({ title, plans } : { title: string, plans: any[] }) {
+function PlansList({ title, plans, includeCreate = false } : { title: string, plans: any[], includeCreate?: boolean }) {
     return (
         <div className={styles.listWrapper}>
             <button>{title}</button>
@@ -13,6 +13,13 @@ function PlansList({ title, plans } : { title: string, plans: any[] }) {
                         <h4>{plan.title}</h4>
                     </div>
                 ))}
+
+                {includeCreate && (
+                    <div className={styles.planWrapper}>
+                        <img src='/general/plus.svg' style={{ padding: '30px' }} />
+                        <h4>Create new Event</h4>
+                    </div>
+                )}
             </div>
         </div>
     )
